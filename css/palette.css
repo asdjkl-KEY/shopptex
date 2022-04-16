@@ -42,4 +42,10 @@
 
 /*Fonts*/
 .fredoka {font-family: 'Fredoka One', cursive;}
-.lato {font-family: 'Montserrat' sans-serif;}
+.lato {font-family: 'Montserrat', sans-serif;}
+
+.icon {
+    fill: #1b294a;
+    stroke: #1b294a;
+    color: #1b294a;
+}

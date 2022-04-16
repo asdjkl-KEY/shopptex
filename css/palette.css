@@ -1,0 +1,45 @@
+/*Text Colors*/
+.color1 {color: #00000d;}
+.color2 {color: #1b294a;}
+.color3 {color: #495793;}
+.color4 {color: #888ae7;}
+.color5 {color: #d6c2ff;}
+
+/*Background Colors*/
+.bg-color1 { background: #00000d; }
+.bg-color2 { background: #1b294a; }
+.bg-color3 { background: #495793; }
+.bg-color4 { background: #888ae7; }
+.bg-color5 { background: #d6c2ff; }
+
+/*Backgrounds Linear gradients*/
+.gradient-1-b {background: linear-gradient(to bottom,#00000d, #1b294a);}
+.gradient-2-b {background: linear-gradient(to bottom,#1b294a, #495793);}
+.gradient-3-b {background: linear-gradient(to bottom,#495793, #888ae7);}
+.gradient-4-b {background: linear-gradient(to bottom,#888ae7, #d6c2ff);}
+.gradient-5-b {background: linear-gradient(to bottom,#00000d, #d6c2ff);}
+
+/*Gradients to right*/
+.gradient-1-r {background: linear-gradient(to right,#00000d, #1b294a);}
+.gradient-2-r {background: linear-gradient(to right,#1b294a, #495793);}
+.gradient-3-r {background: linear-gradient(to right,#495793, #888ae7);}
+.gradient-4-r {background: linear-gradient(to right,#888ae7, #d6c2ff);}
+.gradient-5-r {background: linear-gradient(to right,#00000d, #d6c2ff);}
+
+/*Gradients to Left*/
+.gradient-1-l {background: linear-gradient(to left,#00000d, #1b294a);}
+.gradient-2-l {background: linear-gradient(to left,#1b294a, #495793);}
+.gradient-3-l {background: linear-gradient(to left,#495793, #888ae7);}
+.gradient-4-l {background: linear-gradient(to left,#888ae7, #d6c2ff);}
+.gradient-5-l {background: linear-gradient(to left,#00000d, #d6c2ff);}
+
+/*Gradients to top*/
+.gradient-1-t {background: linear-gradient(to top,#00000d, #1b294a);}
+.gradient-2-t {background: linear-gradient(to top,#1b294a, #495793);}
+.gradient-3-t {background: linear-gradient(to top,#495793, #888ae7);}
+.gradient-4-t {background: linear-gradient(to top,#888ae7, #d6c2ff);}
+.gradient-5-t {background: linear-gradient(to top,#00000d, #d6c2ff);}
+
+/*Fonts*/
+.fredoka {font-family: 'Fredoka One', cursive;}
+.lato {font-family: 'Montserrat' sans-serif;}

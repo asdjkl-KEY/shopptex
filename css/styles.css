@@ -175,6 +175,34 @@
 .gap-5 {gap: var(--main-grid-gap-6) var(--main-grid-gap-5);}
 
 
+
 /*
-TODO!! Terminar los demas componentes e instalar de nuevo el tema de better comments :)
+Positions //////////////////////
+*/
+
+.p-relative {position: relative;}
+.p-static {position: static;}
+.p-absolute {position: absolute;}
+.p-fixed {position: fixed;}
+.p-sticky-t {position: sticky; -webkit-position: sticky; -moz-position: sticky; top: 0;}
+.p-sticky-b {position: sticky; -webkit-position: sticky; -moz-position: sticky; bottom: 0;}
+
+/*
+* Justifies (solo para flex, flexbox & inline-flex)
+*/
+
+.just-start {justify-content: start;}
+.just-end {justify-content: end;}
+.just-center {justify-content: center;}
+
+/*
+Align items
+*/
+
+.items-start {align-items: flex-start;}
+.items-end {align-items: flex-end;}
+.items-center {align-items: center;}
+
+/*
+
 */

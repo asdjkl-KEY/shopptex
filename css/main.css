@@ -1,0 +1,36 @@
+#trans-animation {
+    overflow: hidden;
+    border-bottom: 2px dashed #000;
+}
+#motorcycle, #truck, #plane {
+    left: -12%;
+}
+
+@keyframes veicleMove {
+    from {
+        left: -12%;
+    }
+    to {
+        left: 105%;
+    }
+}
+@keyframes planeMove {
+    0% {
+        left: -12%;
+        bottom: 0;
+    }
+    50% {
+        left: 50%;
+        bottom: 40%;
+    }
+    100% {
+        left: 105%;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    main .section1 {
+        margin-top: 80px;
+    }
+}

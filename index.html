@@ -12,8 +12,7 @@
     <link rel="icon" href="assets/svg/logov2.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" integrity="sha512-qzgHTQ60z8RJitD5a28/c47in6WlHGuyRvMusdnuWWBB6fZ0DWG/KyfchGSBlLVeqAz+1LzNq+gGZkCSHnSd3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,33 +22,54 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/style.responsive.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--Name Page-->
-    <title>Home | Shopptex</title>
+    <title>Shopptex Artigos e presentes | Home</title>
 </head>
 <body>
     <header role="banner">
+        <div id="top-bar" class="bg-danger text-center">
+            <span class="fa fa-bars p-absolute l-0 m1" id="top-menu"></span>
+            <img src="assets/svg/logo200x100.svg" alt="Logo" id="brand-logo2">
+        </div>
+        <nav id="navbar" class="bg-danger">
+            <a href="index.html"><img src="assets/svg/logo.svg" alt="Shopptex" id="brand-logo"></a>
+            <ul id="nav-list" class="lato">
+                <li class="nav-item" id="nav-current"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link">MODA</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Saúde & Beleza</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Casa & Cozinha</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Acessórios em Geral</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Infantil</a></li>
+                <li class="nav-item nav-icon"><a href="" class="nav-link fa fa-shopping-cart"></a></li>
+                <li class="nav-item nav-icon"><button class="nav-link fa fa-search nav-button" id="search"></button></li>
+            </ul>
+        </nav>
+        <div id="contain-search" class="lato bg-light">
+            <form action="">
+                <input type="text" id="search-input" class="lato danger">
+                <button id="search-quit" class="nav-button danger">X</button>
+            </form>
+        </div>
     </header>
-    <div id="top-bar" class="bg-danger">
-        <span class="fa fa-bars" id="top-menu"></span>
+
+    <main class="bg-cinze p2">
+        <section class="section1 monserrat text-center col-center p-relative flex f-column pt-6">
+            <h2 class="text-center dark comfortaa mb-3 h2">LIQUIDAÇÃO 50%OFF</h2>
+            <span class="lato">Frete grátis para todo Brasil</span>
+            <div class="w-50 m-auto p-relative w-80 h-100px" id="trans-animation">
+                <span class="fa fa-truck p-absolute b-0" id="truck"></span>
+                <span class="fa fa-plane p-absolute b-0" id="plane"></span>
+                <span class="fa fa-motorcycle p-absolute b-0" id="motorcycle"></span>
+            </div>
+            <a href="#" class="btn btn-block btn-md mt-4 btn1">Compre já</a>
+        </section>
+    </main>
+    <div class="bg-lightblue container">
+        <h2 class="h2 monserrat">Conheça nossas coleções</h2>
+        <div class="grid"></div>
     </div>
-    <nav id="navbar" class="bg-danger">
-        <a href="index.html"><img src="assets/svg/logo.svg" alt="Shopptex" id="brand-logo"></a>
-        <ul id="nav-list" class="lato">
-            <li class="nav-item" id="nav-current"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="" class="nav-link">MODA & Beleza</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Casa & Cozinha</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Artigos Gerais</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Infantil</a></li>
-            <li class="nav-item nav-icon"><a href="" class="nav-link fa fa-shopping-cart"></a></li>
-            <li class="nav-item nav-icon"><button class="nav-link fa fa-search nav-button" id="search"></button></li>
-        </ul>
-    </nav>
-    <div id="contain-search" class="lato bg-light">
-        <form action="">
-            <input type="text" id="search-input" class="lato danger">
-            <button id="search-quit" class="nav-button danger">X</button>
-        </form>
-    </div>
+
     <script src="js/main.js"></script>
 </body>
 </html>

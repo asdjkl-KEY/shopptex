@@ -121,7 +121,7 @@
 @media only screen and (max-width: 992px) {
     #navbar {
         height: auto;
-        margin-top: -100%;
+        margin-top: -120%;
     }
     #nav-list {
         flex-direction: column;
@@ -176,7 +176,7 @@
         margin-top: 0;
     }
     to {
-        margin-top: -100%;
+        margin-top: -120%;
     }
 }
 @keyframes opaque {

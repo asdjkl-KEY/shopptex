@@ -9,7 +9,7 @@
     <meta name="keywords" content="casa, cozinha, moda, infantil, produtos, acesorios, compras, loja, virtual">
 
     <!--Styles and Fonts-->
-    <link rel="icon" href="https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1644515575BADGE_2.png?utm_campaign=alura_latam_-_challenge_email_projeto_1_br&utm_medium=email&utm_source=RD+Station">
+    <link rel="icon" href="assets/svg/logov2.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,35 +20,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Stylesheet-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/palette.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.responsive.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
     <!--Name Page-->
     <title>Home | Shopptex</title>
 </head>
 <body>
-    <header>
-        <h1 class="lato color4 bg-color3">Seja bemvindo a nossa loja!</h1>
-        <div id="top-bar">
-            <span class="fa fa-bars"></span>
-        </div>
-        <nav id="navbar" class="gradient-3-b">
-            <div id="brand">
-                <img src="https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1644515575BADGE_2.png?utm_campaign=alura_latam_-_challenge_email_projeto_1_br&utm_medium=email&utm_source=RD+Station" alt="Brand">
-            </div>
-            <ul class="nav-list fredoka inline">
-                <li class="nav-item" id="currentBefore"><a href="/" class="nav-link color5"> Home</a></li>
-                <span class="nav-divise"> | </span>
-                <li class="nav-item"><a href="" class="nav-link color5">MODA</a></li>
-                <span class="nav-divise"> | </span>
-                <li class="nav-item"><a href="" class="nav-link color5"> Saúde e Beleza</a></li>
-                <span class="nav-divise"> | </span>
-                <li class="nav-item"><a href="" class="nav-link color5">Acessórios em Geral</a></li>
-                <span class="nav-divise"> | </span>
-                <li class="nav-item"><a href="" class="nav-link color5">Casa & Cozinha</a></li>
-                <li class="nav-item nav-divise no-before"><button type="button" class="nav-icon fa fa-search color5"></button></li>
-                <li class="nav-item no-before"><a href="" class="nav-link fa fa-shopping-cart color5"></a></li>
-            </ul>
-        </nav>
+    <header role="banner">
     </header>
+    <div id="top-bar" class="bg-danger">
+        <span class="fa fa-bars" id="top-menu"></span>
+    </div>
+    <nav id="navbar" class="bg-danger">
+        <a href="index.html"><img src="assets/svg/logo.svg" alt="Shopptex" id="brand-logo"></a>
+        <ul id="nav-list" class="lato">
+            <li class="nav-item" id="nav-current"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link">MODA & Beleza</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Casa & Cozinha</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Artigos Gerais</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Infantil</a></li>
+            <li class="nav-item nav-icon"><a href="" class="nav-link fa fa-shopping-cart"></a></li>
+            <li class="nav-item nav-icon"><button class="nav-link fa fa-search nav-button" id="search"></button></li>
+        </ul>
+    </nav>
+    <div id="contain-search" class="lato bg-light">
+        <form action="">
+            <input type="text" id="search-input" class="lato danger">
+            <button id="search-quit" class="nav-button danger">X</button>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

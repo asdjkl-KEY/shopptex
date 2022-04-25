@@ -1,84 +1,161 @@
-h1 {
-    padding: 12px;
-    margin: 0;
-    text-align: center;
+#navbar{
+    position: relative;
+    height: 120px;
+    z-index: 10;
 }
 #top-bar {
     display: none;
 }
-.flex-row {
+#brand-logo {
+    display: block;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 48px;
+}
+#nav-list {
     display: flex;
     flex-direction: row;
-    position: relative;
-}
-#navbar {
-    position: relative;
-    height: 150px;
-}
-#brand {
-    width: 10%;
-    height: auto;
-    padding: 12px;
-    display: inline-block;
-    position: absolute;
-}
-#brand img {
-    width: 100%;
-    height: auto;
-}
-.inline {
-    display: inline-flex;
-    flex-direction: row;
-}
-.nav-list {
+    justify-content: right;
     list-style: none;
-    justify-content: center;
-    padding: 48px;
-    float: right;
+    padding: 40px 12px;
 }
-.nav-divise {
-    margin: 0 24px;
-    font-size: 1.3em;
-    padding: 12px;
-    color: #cdcdcd;
-}
+
 .nav-item {
-    padding: 12px 0;
+    padding: 12px 24px;
     position: relative;
-}
-.nav-link {
-    text-decoration: none;
-    font-size: 1.2em;
 }
 .nav-item:before {
     content: "";
     width: 0;
     height: 3px;
-    background: #d6c2ff;
+    background: var(--color2);
     position: absolute;
-    bottom: 0;
     left: 50%;
-    transition: 0.3s;
+    bottom: 0;
+    transition: all 0.3s;
 }
 .nav-item:hover:before {
+    width: 100%;
     left: 0;
-    width: 100%;
 }
-#currentBefore:before {
-    content: "";
+#nav-current:before {
     width: 100%;
-    position: absolute;
     left: 0;
-    bottom: 0;
 }
-#currentBefore:hover:before {
-    left: 0%;
-    width: 100%;
+.nav-link {
+    text-decoration: none;
+    color: var(--color2);
 }
-.no-before:before {
-    display: none;
-}
-.nav-icon {
+.nav-button {
     background: none;
     border: none;
+}
+.nav-icon:before {
+    display: none;
+}
+@keyframes aparecer {
+    from {
+        margin-top: -200px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+@keyframes desaparecer {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: -200px;
+    }
+}
+#contain-search {
+    position: relative;
+    float: right;
+    margin-top: -200px;
+    border: 1px solid #cdcdcd;
+    padding: 32px 24px;
+}
+#search-input {
+    padding: 12px;
+    width: 300px;
+    border-radius: 8px;
+    outline-color: transparent;
+    border: 1px solid var(--color1);
+}
+#search-input:focus-visible {
+    box-shadow: 0 0 12px var(--color1);
+    -moz-box-shadow: 0 0 12px var(--color1);
+    -webkit-box-shadow: 0 0 12px var(--color1);
+}
+#search-quit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 12px;
+    z-index: 11;
+}
+
+@media only screen and (max-width: 992px) {
+    #navbar {
+        height: auto;
+        margin-top: -100%;
+    }
+    #nav-list {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: var(--color1);
+        margin: 0;
+        padding-top: 0;
+        border-top: 1px solid var(--color2);
+    }
+    .nav-item:before {
+        display: none;
+    }
+    #brand-logo {
+        position: static;
+        width: 80px;
+        height: auto;
+        padding: 0;
+        margin: auto;
+    }
+    #top-bar {
+        display: block;
+        position: relative;
+        z-index: 12;
+        padding: 12px;
+        font-size: 30px;
+        color: var(--color2);
+    }
+    #contain-search {
+        display: block;
+        padding: 32px 0;
+        float: none;
+    }
+    #contain-search form {
+        margin: 0;
+        padding: 0;
+    }
+    #search-input {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+@keyframes navDown {
+    to {
+        margin-top: 0;
+    }
+}
+@keyframes navUp {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: -100%;
+    }
 }

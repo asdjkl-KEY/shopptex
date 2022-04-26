@@ -80,3 +80,20 @@ function thumbnail() {
     }
 }
 thumbnail();
+
+function animateOnScroll() {
+    let grid = document.getElementById('mais-vendido');
+
+    function cargarComponentes() {
+        grid.style.animation = 'unopaque 2s forwards';
+    }
+
+    const observator = new IntersectionObserver(cargarComponentes, {
+        root: null,
+        rootMargin: '0px 0px -100px 0px',
+        threshold: 1.0
+    });
+
+    observator.observe(grid)
+}
+animateOnScroll();

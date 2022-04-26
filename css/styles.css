@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Comfortaa", cursive;
 }
 body {
     box-sizing: border-box;
@@ -30,6 +31,7 @@ html {
 .monserrat {font-family: "Monserrat", sans-serif;}
 .lato {font-family: "Fredoka One", cursive;}
 .comfortaa {font-family: "Comfortaa", cursive;}
+.work-sans {font-family: "Work Sans", sans-serif;}
 
 .bg-light {background: var(--light);}
 .bg-dark {background: var(--dark);}
@@ -207,6 +209,34 @@ html {
     grid-template-areas: "a a b";
 }
 
+.grid-component {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid-component .size1 { height: 200px;}
+.grid-component .size2 { height: 350px;}
+.grid-component .size3 {height: 400px;}
+.grid-component .size4 {height: 500px;}
+.grid-component .size5 {height: 600px;}
+
+.grid-component .grid-section1 {overflow: hidden; height: 200px;}
+.grid-component .grid-section2 {height: 225px;}
+
+.grid-component > div > img {
+    width: 200px;
+    height: 200px;
+}
+
+/* 
+ *Grid Gaps
+*/
+
+.gap-1 {gap: 24px 12px;}
+.gap-2 {gap:  32px 24px;}
+.gap-3 {gap: 48px 32px;}
+.gap-4 {gap: 56px 48px;}
+.gap-5 {gap: 64px 56px;}
 
 /*
  *Headings
@@ -224,3 +254,6 @@ html {
     height: 100%;
     transition: all 0.4s;
 }
+
+.opaque1 {opacity: 1;}
+.opaque0 {opacity: 0;}

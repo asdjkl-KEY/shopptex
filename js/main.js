@@ -62,7 +62,7 @@ function thumbnail() {
     {id: "fourth", thumbnail: 'thumbnail4'},
     {id: "fiveth", thumbnail: "thumbnail5"}
 ];
-    for (collage of collages) {
+    for (let collage of collages) {
         let element = document.getElementById(collage.id);
         let thumbnail = document.getElementById(collage.thumbnail);
         element.addEventListener('mouseover', () => {
@@ -81,19 +81,3 @@ function thumbnail() {
 }
 thumbnail();
 
-function animateOnScroll() {
-    let grid = document.getElementById('mais-vendido');
-
-    function cargarComponentes() {
-        grid.style.animation = 'unopaque 2s forwards';
-    }
-
-    const observator = new IntersectionObserver(cargarComponentes, {
-        root: null,
-        rootMargin: '0px 0px -100px 0px',
-        threshold: 1.0
-    });
-
-    observator.observe(grid)
-}
-animateOnScroll();
